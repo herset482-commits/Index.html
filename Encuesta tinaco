@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Encuesta sobre Tinacos</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#eaf4f8;
+    margin:0;
+    padding:20px;
+}
+
+form{
+    max-width:750px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 3px 12px #999;
+}
+
+h1{
+    text-align:center;
+    color:#1565c0;
+}
+
+.intro{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.pregunta{
+    margin:18px 0;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    background:#fafafa;
+}
+
+.pregunta b{
+    display:block;
+    margin-bottom:10px;
+}
+
+label{
+    display:block;
+    margin:8px 0;
+}
+
+button{
+    display:block;
+    margin:25px auto 0;
+    padding:13px 30px;
+    border:none;
+    border-radius:8px;
+    background:#1565c0;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0d47a1;
+}
+
+#mensaje{
+    display:none;
+    text-align:center;
+    margin-top:20px;
+    padding:15px;
+    background:#d4edda;
+    color:#155724;
+    border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<form id="encuesta">
+
+<h1>Encuesta sobre Tinacos</h1>
+
+<p class="intro">
+Contesta las siguientes preguntas seleccionando una opción.
+</p>
+
+<div class="pregunta">
+<b>1. ¿Cómo se ocupa la madera en un tinaco?</b>
+<label><input type="radio" name="p1" required> Como soporte o estructura auxiliar</label>
+<label><input type="radio" name="p1"> Para almacenar agua</label>
+<label><input type="radio" name="p1"> Como recubrimiento</label>
+</div>
+
+<div class="pregunta">
+<b>2. ¿Cuál es la función principal de un tinaco?</b>
+<label><input type="radio" name="p2" required> Almacenar agua</label>
+<label><input type="radio" name="p2"> Calentar agua</label>
+<label><input type="radio" name="p2"> Filtrar aire</label>
+</div>
+
+<div class="pregunta">
+<b>3. ¿De qué material son fabricados comúnmente los tinacos?</b>
+<label><input type="radio" name="p3" required> Plástico o polietileno</label>
+<label><input type="radio" name="p3"> Madera</label>
+<label><input type="radio" name="p3"> Vidrio</label>
+</div>
+
+<div class="pregunta">
+<b>4. ¿Cómo es la estructura de un tinaco?</b>
+<label><input type="radio" name="p4" required> Cilíndrica o similar, con tapa</label>
+<label><input type="radio" name="p4"> Completamente plana</label>
+<label><input type="radio" name="p4"> Sin paredes</label>
+</div>
+
+<div class="pregunta">
+<b>5. ¿Por qué es importante que el tinaco tenga una base firme?</b>
+<label><input type="radio" name="p5" required> Para soportar su peso</label>
+<label><input type="radio" name="p5"> Para decorarlo</label>
+<label><input type="radio" name="p5"> Para reducir su tamaño</label>
+</div>
+
+<div class="pregunta">
+<b>6. ¿Qué elemento permite la entrada de agua?</b>
+<label><input type="radio" name="p6" required> Tubería de alimentación</label>
+<label><input type="radio" name="p6"> Piso</label>
+<label><input type="radio" name="p6"> Tapa únicamente</label>
+</div>
+
+<div class="pregunta">
+<b>7. ¿Qué elemento permite sacar el agua del tinaco?</b>
+<label><input type="radio" name="p7" required> Tubería de salida</label>
+<label><input type="radio" name="p7"> Madera</label>
+<label><input type="radio" name="p7"> Tapa</label>
+</div>
+
+<div class="pregunta">
+<b>8. ¿Para qué sirve la tapa del tinaco?</b>
+<label><input type="radio" name="p8" required> Proteger el agua de suciedad</label>
+<label><input type="radio" name="p8"> Aumentar el consumo</label>
+<label><input type="radio" name="p8"> Calentar el agua</label>
+</div>
+
+<div class="pregunta">
+<b>9. ¿Qué material se utiliza en algunas bases para tinacos?</b>
+<label><input type="radio" name="p9" required> Concreto y acero</label>
+<label><input type="radio" name="p9"> Papel</label>
+<label><input type="radio" name="p9"> Cartón</label>
+</div>
+
+<div class="pregunta">
+<b>10. ¿Qué sucede si un tinaco está mal apoyado?</b>
+<label><input type="radio" name="p10" required> Puede presentar inestabilidad</label>
+<label><input type="radio" name="p10"> Se vuelve más ligero</label>
+<label><input type="radio" name="p10"> Purifica automáticamente el agua</label>
+</div>
+
+<div class="pregunta">
+<b>11. ¿Para qué sirve el flotador?</b>
+<label><input type="radio" name="p11" required> Controlar el nivel de agua</label>
+<label><input type="radio" name="p11"> Sostener el tinaco</label>
+<label><input type="radio" name="p11"> Calentar el agua</label>
+</div>
+
+<div class="pregunta">
+<b>12. ¿Qué material es común en las tuberías de un tinaco?</b>
+<label><input type="radio" name="p12" required> PVC</label>
+<label><input type="radio" name="p12"> Madera</label>
+<label><input type="radio" name="p12"> Tela</label>
+</div>
+
+<div class="pregunta">
+<b>13. ¿Por qué se coloca un tinaco a cierta altura?</b>
+<label><input type="radio" name="p13" required> Para favorecer la presión y distribución del agua</label>
+<label><input type="radio" name="p13"> Para evitar que pese</label>
+<label><input type="radio" name="p13"> Para reducir su capacidad</label>
+</div>
+
+<div class="pregunta">
+<b>14. ¿Qué debe revisarse periódicamente en un tinaco?</b>
+<label><input type="radio" name="p14" required> Limpieza, tapa, conexiones y estado general</label>
+<label><input type="radio" name="p14"> Solo el color</label>
+<label><input type="radio" name="p
